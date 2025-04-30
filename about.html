@@ -1,13 +1,52 @@
 <!DOCTYPE html>
-<html lan="ko">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>소개 페이지</title>    
+    <title> 소개 페이지</title>
+    <style>
+        h1{
+            font-size: 40px;
+        }
+
+        p{
+            font-size: 20px;
+        }
+
+        .navbar {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .navbar li {
+            display: inline;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: #007BFF;
+        }
+    </style>
 </head>
 <body>
-    <h1>자기소개</h1>
-    <p>안녕하세요, 저는 서상준입니다.</p>
-    <P>요즘 관심사는 코딩입니다!</P>
-    <a href="index.html"> 메인으로 돌아가기</a>
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">홈</a></li>
+            <li><a href="about.html">소개</a></li>
+            <li><a href="contact.html">연락처</a></li>
+        </ul>
+    </nav>
+    <h1> 서상준 소개</h1>
+    <p> 저는 프론트엔드와 백엔드를 공부하는 개발자 지망생입니다.</p>
+    <a href="index.html"> ← 돌아기기</a>
 </body>
 </html>
